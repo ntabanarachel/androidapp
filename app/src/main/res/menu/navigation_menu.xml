@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:title="@string/add_dish"
+            android:id="@+id/dish_id"
+            android:icon="@drawable/sample"/>
+
+        <item
+            android:title="Add Recipie"
+            android:id="@+id/recipie_id"
+            android:icon="@drawable/sample"/>
+    </group>
+
+
+    <item android:title="@string/otherheader">
+
+
+        <menu>
+            <item
+                android:title="view Dish"
+                android:id="@+id/viewdish"
+                android:icon="@drawable/sample"/>
+
+            <item
+                android:title="view recipie"
+                android:id="@+id/viewrecipie"
+                android:icon="@drawable/sample"/>
+        </menu>
+
+    </item>
+
+
+</menu>

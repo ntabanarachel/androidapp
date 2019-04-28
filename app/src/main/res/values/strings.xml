@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Restorant Name</string>
+    <string name="item_3">item 3</string>
+    <string name="item_2">item 2</string>
+    <string name="item1">item1</string>
+    <string name="myimage">myimage</string>
+    <string name="username">username</string>
+    <string name="user_username_gmail_com">user.username@gmail.com</string>
+    <string name="add_dish">add dish</string>
+    <string name="otherheader">otherheader</string>
+    <string name="open_drawer">open navigation drawer</string>
+    <string name="close_drawer">close navigation drawer</string>
+</resources>

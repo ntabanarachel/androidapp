@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+       <!--for the toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_id"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!--end of tool bar-->
+
+
+    <!--for the ikmageview-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_id"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/myicon"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toolbar_id"/>
+
+    <!--end of end of imageview-->
+
+    <!--for the username textinputLayout-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/username_textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/img_id">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/userName_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter User Name"
+            android:layout_margin="15dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!--end of usernametextInput Layout-->
+
+
+    <!--for the EmailTextInputLayout-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/email_textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/username_textinputlayout">
+
+        <android.support.v7.widget.AppCompatEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Email"
+            android:layout_margin="15dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!--end of EmailTextInputLayout-->
+
+
+    <!--for the PasswordTextInputLayout-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/password_textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/email_textinputlayout">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/passwrd_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Password"
+            android:layout_margin="15dp"
+            android:inputType="textPassword"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!--end of PasswordTextInputLayout-->
+
+
+    <!--for the PasswordTextInputLayout-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/button_textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/email_textinputlayout">
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!--end of PasswordTextInputLayout-->
+
+    <Button
+        android:id="@+id/btn_id"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorBackground"
+        android:onClick="login"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textColor="@color/itemColor"
+        android:layout_below="@id/password_textinputlayout"/>
+
+</RelativeLayout>
